@@ -1,0 +1,155 @@
+-- --------------------------------------------------------
+-- Host:                         localhost
+-- Versi server:                 5.7.21 - MySQL Community Server (GPL)
+-- OS Server:                    Win64
+-- HeidiSQL Versi:               9.2.0.4947
+-- --------------------------------------------------------
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8mb4 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+-- Dumping database structure for codeigniter-rpl
+CREATE DATABASE IF NOT EXISTS `codeigniter-rpl` /*!40100 DEFAULT CHARACTER SET latin1 */;
+USE `codeigniter-rpl`;
+
+
+-- Dumping structure for table codeigniter-rpl.asset
+CREATE TABLE IF NOT EXISTS `asset` (
+  `nik` varchar(50) NOT NULL,
+  `employee_name` varchar(100) DEFAULT NULL,
+  `location` varchar(50) DEFAULT NULL,
+  `device` varchar(50) DEFAULT NULL,
+  `brand` varchar(50) DEFAULT NULL,
+  `type` varchar(50) DEFAULT NULL,
+  `no_asset` varchar(50) DEFAULT NULL
+) ENGINE=MyISAM AUTO_INCREMENT=9201002 DEFAULT CHARSET=latin1;
+
+-- Dumping data for table codeigniter-rpl.asset: 120 rows
+/*!40000 ALTER TABLE `asset` DISABLE KEYS */;
+INSERT INTO `asset` (`nik`, `employee_name`, `location`, `device`, `brand`, `type`, `no_asset`) VALUES
+	('9401002', 'Soelaeman', '18F', 'M', 'Samsung', 'SyncMasterE1920', 'AGR_2009_10_94_00045'),
+	('0712021', 'Rudy', '18F', 'M', 'Acer', 'X193HD', 'AGR_2009_00034'),
+	('1212250', 'M', '18F', 'M', 'ACER', 'X173W', 'AGR_2009_00006'),
+	('1307201', 'Andy', '18F', 'M', 'LG', 'LED', 'AGR_2008_00035'),
+	('1005049', 'Stella', '18F', 'M', 'Samsung', 'B1930', 'AGR_09_88_00083'),
+	('1207151', 'Intan', '18F', 'M', 'LG', 'W1943C', '18F_M0020'),
+	('1309234', 'Deti', '18F', 'M', 'Samsung', 'Syncmaster', '18F_M0018'),
+	('0908037', 'Dewi', '18F', 'M', 'Samsung', 'B1930', '18F_M0016'),
+	('1102052', 'Susianty', '18F', 'M', 'LG', 'FLATRON', '18F_M0015'),
+	('1306156', 'Arif', '18F', 'M', 'LG', 'LED', '18F_M0014'),
+	('1206139', 'Ferdinand', '18F', 'M', 'LG', 'W1943C', '18F_M0013'),
+	('1206134', 'Irma', '18F', 'M', 'LG', 'FLATROM', '18F_M0012'),
+	('1202035', 'Milawati', '18F', 'M', 'Samsung', 'Syncmaster', '18F_M0010'),
+	('1011105', 'Wiwi', '18F', 'M', 'Samsung', 'Syncmaster', '18F_M0008'),
+	('1506184', 'Suwarno', '18F', 'M', 'LG', '19EN33', '18F_M0007'),
+	('1303039', 'Septian', '18F', 'M', 'Samsung', 'Syncmaster', '18F_M0006'),
+	('1403045', 'Muhammad', '18F', 'M', 'LG', '19EN33', '18F_M0004'),
+	('1409181', 'Fajrianto', '18F', 'M', 'Samsung', 'Syncmaster', '18F_M0003'),
+	('1306181', 'Arief', '18F', 'M', 'Samsung', 'Syncmaster', '18F_M0002'),
+	('1804136', 'Zerica', '18F', 'M', 'LG', 'LED', '18F_M0001'),
+	('1308213', 'Adi', '18F', 'D', 'HP', 'All', 'Audit_01_0049'),
+	('1704082', 'Ahmad', '18F', 'M', 'Philips', 'Design', 'ASR_2015_07_91_00025'),
+	('1405093', 'Rakhmadi', '17F', 'L', 'HP', 'ProBook', 'AGR_2016_04_88_00017'),
+	('1601001', 'Chrisliani', '17F', 'L', 'HP', 'ProBook', 'DMP_2016_02_99_00001'),
+	('1212264', 'Khatina', '17F', 'L', 'HP', 'ProBook', 'ASR_2017_08_90_00002'),
+	('1402016', 'Andri', '17F', 'L', 'HP', 'ProBook', 'ASR_2016_06_90_00003'),
+	('1504081', 'Diana', '17F', 'L', 'HP', '1409TU', 'ASR_2015_08_90_00013'),
+	('1209185', 'Tito', '17F', 'L', 'Lenovo', 'Thinkpad', 'ASR_2015_04_90_00007'),
+	('1208163', 'Ranggi', '17F', 'L', 'Lenovo', 'Thinkpad', 'ASR_2015_04_90_00006'),
+	('1602020', 'Tiffany', '17F', 'L', 'HP', 'ProBook', 'ASR_2014_05_91_00001'),
+	('1303041', 'Eric', '17F', 'L', 'HP', 'ProBook', 'ASR_2013_04_90_00004'),
+	('1303061', 'Andre', '17F', 'L', 'HP', 'Probook4430s', 'ASR_2013_02_90_00002'),
+	('1602019', 'Dhea', '17F', 'L', 'HP', '240', 'AGR_2015_08_90_00050'),
+	('1501001', 'Widyawati', '17F', 'L', 'Lenovo', 'Thinkpad', 'AGR_2015_08_90_00004'),
+	('1404070', 'Agie', '17F', 'L', 'HP', 'ProBook', 'AGR_2014_06_91_00003'),
+	('1601002', 'Fendi', '17F', 'L', 'HP', 'ProBook', 'AGR_2014_06_90_00009'),
+	('1403040', 'Deni', '17F', 'L', 'HP', 'ProBook', 'AGR_2014_04_90_00004'),
+	('1403035', 'Victor', '17F', 'L', 'HP', 'ProBook', 'AGR_2014_03_90_00002'),
+	('1310248', 'Desak', '17F', 'L', 'HP', 'Probook', 'AGR_2013_11_90_00015'),
+	('9004003', 'Nuriani', '17F', 'L', 'HP', 'ProBook', 'AGR_2013_11_90_00014'),
+	('A13271', 'Didik', '17F', 'L', 'ACER', 'ASPIRE', 'AGR_2013_10_90_00012'),
+	('1304100', 'Ricco', '17F', 'L', 'HP', 'ProBook', 'AGR_2013_05_91_00007'),
+	('1404072', 'Ayu', '17F', 'L', 'HP', 'Probook', '17F_L0023'),
+	('1104091', 'Agustinus', '17F', 'L', 'HP', 'ProBook', '17F_L0012'),
+	('0501015', 'Sherly', '17F', 'M', 'Samsung', 'Sync', 'MTR_AGR_2012_00024'),
+	('1109162', 'Yustina', '17F', 'M', 'Samsung', 'Sync', 'MTR_AGR_2012_00023'),
+	('1411248', 'Dwi', '17F', 'M', 'LG', 'LED20M35', 'GAIN_2014_12_88_00006'),
+	('1409185', 'Lenni', '17F', 'M', 'LG', 'LED20M35', 'GAIN_2014_11_88_00005'),
+	('1409176', 'Nia', '17F', 'M', 'LG', 'LED20M35', 'GAIN_2014_09_88_00003'),
+	('1210202', 'Novita', '17F', 'M', 'LG', 'LED20M35', 'GAIN_2014_06_88_00003'),
+	('Resign', 'Julia', '17F', 'M', 'LG', 'LED20M35', 'GAIN_2014_04_91_00001'),
+	('1503061', 'Maya', '17F', 'M', 'LG', 'Flatron', 'ASR_2015_04_88_00017'),
+	('1212264', 'Khatina', '17F', 'M', 'LG', 'Flatron', 'ASR_2013_01_88_00001'),
+	('1603037', 'Meilianie', '17F', 'M', 'LG', 'LED22M45', 'AGR_2015_12_88_00053'),
+	('1212256', 'Tommy', '17F', 'M', 'LG', '20M37A', 'AGR_2015_10_88_00052'),
+	('1602034', 'Zulian', '17F', 'M', 'LG', 'LED', 'AGR_2015_08_88_00049'),
+	('1201003', 'Ita', '17F', 'M', 'LG', 'Flatron', 'AGR_2015_04_88_00019'),
+	('0506024', 'Karwang', '17F', 'M', 'LG', 'Flatron', 'AGR_2015_04_88_00017'),
+	('9201001', 'Erwyanto', '17F', 'M', 'LG', '20M37A', 'AGR_2015_01_88_00003'),
+	('1402011', 'Stacia', '17F', 'M', 'LG', 'LED', 'AGR_2014_02_88_00006'),
+	('1103087', 'Fakhrudin', '17F', 'M', 'LG', 'Flatron', 'AGR_2013_04_88_00037'),
+	('1604055', 'Stella', '17F', 'M', 'Samsung', 'Sync', 'AGR_2009_00026'),
+	('9004003', 'Nuriani', '17F', 'M', 'Samsung', 'Sync', '17F_M0038'),
+	('1107124', 'Dhinny', '17F', 'M', 'Samsung', 'Sync', '17F_M0034'),
+	('0704005', 'Budi', '17F', 'D', 'ASUS', 'ET2012E', '17F_D0025'),
+	('0210041', 'R', '18F', 'M', 'Samsung', 'SyncMaster740w', 'AGR_2010_10_00120'),
+	('Outsourcing', 'Putri', '18F', 'M', 'Samsung', 'Syncmaster', 'AGR_2010_10_88_00108'),
+	('MAGANG', 'Adit', '18F', 'M', 'LG', 'FLATTRON', 'AGR_2010_11_88_00122'),
+	('1303053', 'Disa', '18F', 'M', 'Samsung', 'Syncmaster', 'AGR_2011_02_88_00024'),
+	('1103056', 'Nezha', '18F', 'M', 'Samsung', 'B2030', 'AGR_2011_04_08_00063'),
+	('1302036', 'Andy', '18F', 'M', 'Samsung', 'B1930', 'AGR_2011_04_88_00192'),
+	('1011107', 'Gana', '18F', 'M', 'Samsung', 'b1930', 'AGR_2011_11_88_00117'),
+	('0907035', 'Mularsih', '18F', 'M', 'Samsung', 'Syncmaster', 'AGR_2011_11_91_00068'),
+	('1210225', 'Yanuar', '18F', 'M', 'LG', 'FLATRON', 'AGR_2011_12_88_00188'),
+	('1112212', 'Dicka', '18F', 'M', 'Samsung', 'B1930', 'AGR_2011_88_00118'),
+	('0811030', 'Incharis', '18F', 'M', 'Samsung', 'Syncmaster', 'AGR_2012_01_88_00009'),
+	('1302033', 'Ita', '18F', 'M', 'Samsung', 'Syncmaster', 'AGR_2012_02_88_00042'),
+	('1402023', 'Dyan', '18F', 'M', 'LG', 'W1953E', 'AGR_2012_04_88_00084'),
+	('0907034', 'Iwan', '18F', 'M', 'Samsung', 'B1930', 'AGR_2012_10_88_00092'),
+	('1303057', 'Dian', '18F', 'M', 'LG', 'W1943C', 'AGR_2012_10_88_00095'),
+	('9709024', 'Yuli', '18F', 'M', 'LG', 'FLATTRON', 'AGR_2012_11_88_00098'),
+	('1403025', 'Dana', '18F', 'M', 'LG', 'Flatron', 'AGR_2012_11_88_00102'),
+	('1207153', 'Muhammad', '18F', 'M', 'LG', 'Flatron', 'AGR_2012_12_88_00103'),
+	('1701017', 'Rosmerry', '18F', 'M', 'Samsung', 'B1630', 'AGR_2012_12_88_00109'),
+	('0703003', 'Kristi', '18F', 'M', 'LG', 'W1943C', 'AGR_2012_12_88_00110'),
+	('1410211', 'Nirwansyah', '18F', 'M', 'LG', 'Flatron', 'AGR_2013_04_88_00041'),
+	('1701001', 'Maria', '18F', 'M', 'LG', '19EN33', 'AGR_2013_04_88_00048'),
+	('0912062', 'Rheonaldy', '18F', 'M', 'LG', 'E1942', 'AGR_2013_04_88_00051'),
+	('1504082', 'Richard', '18F', 'M', 'LG', 'E1942', 'AGR_2013_04_88_00052'),
+	('1509222', 'Wirta', '18F', 'M', 'LG', 'E1942', 'AGR_2013_04_88_00058'),
+	('1111180', 'Koswara', '18F', 'M', 'LG', 'E1942', 'AGR_2013_05_88_00062'),
+	('1306151', 'Elnawati', '18F', 'M', 'LG', '19EN33', 'AGR_2013_05_88_00063'),
+	('1111188', 'Diyah', '18F', 'M', 'LG', 'W1946', 'AGR_2013_05_88_00064'),
+	('1304120', 'Andreas', '18F', 'M', 'LG', 'LED', 'AGR_2013_08_88_00079'),
+	('1403030', 'Monica', '18F', 'M', 'LG', '19EN33', 'AGR_2013_09_88_00033'),
+	('1309230', 'Fransisca', '18F', 'M', 'LG', '19EN33', 'AGR_2013_09_88_00082'),
+	('1306183', 'Parenatha', '18F', 'M', 'LG', 'LED', 'AGR_2013_09_88_00087'),
+	('1703075', 'Dea', '18F', 'M', 'LG', '19EN33', 'AGR_2013_10_88_00090'),
+	('1303069', 'Muhamad', '18F', 'M', 'LG', 'LED', 'AGR_2013_10_88_00092'),
+	('1309240', 'Wina', '18F', 'M', 'LG', '19EN33', 'AGR_2013_10_88_00093'),
+	('1406066', 'Retno', '18F', 'M', 'LG', '19EN33', 'AGR_2013_10_88_00094'),
+	('1310247', 'Muhammad', '18F', 'M', 'LG', 'LED', 'AGR_2013_12_88_00102'),
+	('1107139', 'Ati', '18F', 'M', 'LG', '22EN43', 'AGR_2014_06_88_00018'),
+	('1405090', 'Ferdiansah', '18F', 'M', 'LG', 'LED', 'AGR_2014_06_88_00044'),
+	('1506174', 'Melby', '18F', 'M', 'LG', 'LED', 'AGR_2014_06_88_0020'),
+	('1505146', 'Mochamad', '18F', 'M', 'LG', 'LED20M35', 'AGR_2014_10_88_00041'),
+	('1201021', 'Silvia', '18F', 'M', 'LG', '20M35', 'AGR_2014_11_88_00046'),
+	('9501001', 'Dewi', '18F', 'M', 'LG', 'LED', 'AGR_2015_01_88_00002'),
+	('1608136', 'Rifky', '18F', 'M', 'LG', '20M35', 'AGR_2015_03_88_00015'),
+	('1502043', 'Dhio', '18F', 'M', 'LG', 'LED', 'AGR_2015_04_88_00015'),
+	('1503057', 'Dita', '18F', 'M', 'LG', 'LED', 'AGR_2015_05_88_00024'),
+	('1503069', 'Catur', '18F', 'M', 'LG', 'LED', 'AGR_2015_06_88_00033'),
+	('1505165', 'Novia', '18F', 'M', 'LG', 'LED', 'ASR_03_88_00014'),
+	('1406069', 'Bernardinus', '18F', 'M', 'LG', '20M37A', 'ASR_2009_00016'),
+	('1504079', 'Reza', '18F', 'M', 'Acer', 'X153W', 'ASR_2009_06_88_000014'),
+	('1110176', 'Julia', '18F', 'M', 'Acer', 'X153W', 'ASR_2011_11_88_00067'),
+	('1601017', 'Doni', '18F', 'M', 'Samsung', 'Syncmaster', 'ASR_2011_12_88_00065'),
+	('1408158', 'Alvin', '18F', 'M', 'Samsung', 'Syncmaster', 'ASR_2012_03_88_00040'),
+	('1211239', 'Setyo', '18F', 'M', 'LG', 'LED', 'ASR_2012_10_88_00054'),
+	('1506182', 'Paul', '18F', 'M', 'LG', 'Flatron', 'ASR_2013_04_88_00012');
+/*!40000 ALTER TABLE `asset` ENABLE KEYS */;
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

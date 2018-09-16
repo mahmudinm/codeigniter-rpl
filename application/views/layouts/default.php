@@ -8,6 +8,7 @@
 
 		<!-- Bootstrap core CSS -->
 		<link href="<?= base_url() ?>assets/css/bootstrap.min.css" rel="stylesheet">
+		<script src="<?= base_url() ?>assets/js/jquery-2.2.0.js"></script>
 
 	</head>
 
@@ -37,8 +38,7 @@
 			<?= $template['body'] ?>
 		</div>
 
-		<script src="<?= base_url() ?>assets/js/jquery-2.2.0.js"></script>
-		<script src="<?= base_url() ?>assets/js/vendor/popper.min.js"></script>
+		<script src="<?= base_url() ?>assets/js/popper.min.js"></script>
 		<script src="<?= base_url() ?>assets/js/bootstrap.min.js"></script>
 	</body>
 </html>
