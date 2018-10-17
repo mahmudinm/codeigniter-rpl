@@ -5,7 +5,11 @@ class Asset_model extends CI_Model {
     
 	public function all()
 	{
-	    return $this->db->get('asset')->result();
+		$this->db->from('asset');
+		$this->db->order_by("nik", "asc");
+		$query = $this->db->get(); 
+		return $query->result();
+	    // return $this->db->get('asset')->orderby('nik', 'DESC')->result();
 	}	
 
 	public function create($data)
